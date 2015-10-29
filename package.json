@@ -1,0 +1,28 @@
+{
+  "name": "Speaker",
+  "version": "0.2.0",
+  "dependencies": {
+    "angular2": "2.0.0-alpha.44",
+    "systemjs": "^0.19.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "live-server": "^0.8.1"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server --open="
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitpocket@github.com/bitpocket/Reader.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bitpocket/Reader/issues"
+  },
+  "homepage": "https://github.com/bitpocket/Reader#readme",
+  "description": ""
+}
