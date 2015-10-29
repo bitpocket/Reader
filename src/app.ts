@@ -34,6 +34,10 @@ export class App {
     speech.default = false;
     speech.voice = voices.filter(function(voice) { return voice.name == 'Google UK English Male'; })[0];
     speech.lang = 'en-GB'; //Also added as for some reason android devices used for testing loaded spanish language
+    var that = this;
+    speech.onend = function(event) {
+      //that.textToRead = '';
+    }
     window.speechSynthesis.speak(speech);
   }
 }
