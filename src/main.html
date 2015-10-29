@@ -1,6 +1,7 @@
 <div>
   <div>
     <button (click)="startRead()">read</button>
+    <input #newrate (keyup)="enterRate($event, newrate)"></input>
     </br>
     <textarea rows="20" cols="120" placeholder="put text to read here ..." #newtext (keyup)="enterText($event, newtext)"></textarea>
   </div>

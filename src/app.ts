@@ -13,6 +13,12 @@ export class App {
     }
   }
 
+  enterRate($event, newRate) {
+    if (newRate) {
+      this.rate = newRate.value;
+    }
+  }
+
   public textToRead;
   rate = 1.0;
 
@@ -32,6 +38,7 @@ export class App {
     var speech = new SpeechSynthesisUtterance(this.textToRead);
     var voices = window.speechSynthesis.getVoices();
     speech.default = false;
+    speech.rate = this.rate;
     speech.voice = voices.filter(function(voice) { return voice.name == 'Google UK English Male'; })[0];
     speech.lang = 'en-GB'; //Also added as for some reason android devices used for testing loaded spanish language
     var that = this;
